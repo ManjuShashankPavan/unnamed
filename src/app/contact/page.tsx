@@ -6,6 +6,7 @@ import {
   FaEnvelope,
   FaInstagram,
   FaFacebook,
+  FaGithub,
 } from "react-icons/fa";
 
 export default function ContactPage() {
@@ -133,7 +134,7 @@ Message: ${message}`;
             <h3 className="font-semibold text-gray-200 mb-3">FOLLOW US</h3>
             <div className="flex space-x-6 text-2xl text-gray-400">
               <a
-                href="https://www.instagram.com/ideasbecomeproducts/"
+                href="https://www.instagram.com/nirvixa2025/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -141,11 +142,18 @@ Message: ${message}`;
               </a>
 
               <a
-                href="https://www.facebook.com/yourusername"
+                href="https://www.facebook.com/people/Nirvixa/61579641066740/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaFacebook className="hover:text-blue-500 cursor-pointer transition" />
+              </a>
+              <a
+                href="https://www.facebook.com/people/Nirvixa/61579641066740/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="hover:text-blue-500 cursor-pointer transition" />
               </a>
             </div>
           </div>

@@ -27,7 +27,7 @@ const projects = [
   },
   {
     title: "Digital Marketing",
-    desc: "A backend system with Node.js & Express.",
+    // desc: "A backend system with Node.js & Express.",
     img: "/images/digi.png",
     // github: "",
     demo: "https://www.instagram.com/globaltechsoftwaresolutions00/?next=%2F",

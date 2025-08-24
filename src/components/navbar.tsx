@@ -31,31 +31,38 @@ export default function Navbar() {
       initial={{ y: -80 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 w-full z-50 shadow-md 
+      className="fixed top-0 left-0 w-full z-50 shadow-lg
                  bg-white/80 dark:bg-[#0f172a]/80 backdrop-blur-md
                  border-b border-gray-200 dark:border-gray-700
                  text-gray-900 dark:text-white"
     >
-      <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-        {/* ✅ Logo */}
-        <motion.a
-          href="/"
-          whileHover={{ scale: 1.05 }}
-          className="flex items-center space-x-2 cursor-pointer"
-          onClick={() => setActive("home")}
-        >
-          <img
-            src="/images/logo.jpeg"
-            alt="Logo"
-            className="w-10 h-10 rounded-full border-2 border-[#0284c7]"
-          />
-          <span className="text-2xl font-extrabold bg-gradient-to-r from-blue-600 to-cyan-400 bg-clip-text text-transparent">
-            IBP
-          </span>
-        </motion.a>
+      <div className="flex justify-between items-center px-8 py-3 max-w-7xl mx-auto">
+
+       {/* ✅ Logo */}
+<motion.a
+  href="/"
+  whileHover={{ scale: 1.05 }}
+  className="flex items-center cursor-pointer relative"
+  onClick={() => setActive("home")}
+>
+  {/* Logo Image (Bigger but won’t stretch navbar) */}
+  <div className="relative w-16 h-16 flex items-center justify-center">
+    <img
+      src="/images/logo.png"
+      alt="Logo"
+      className="w-20 h-20 object-cover absolute -top-2" // 🔥 Bigger but positioned
+    />
+  </div>
+
+  {/* Brand Text */}
+  <span className="ml-2 text-2xl font-extrabold bg-gradient-to-r from-blue-600 to-cyan-400 bg-clip-text text-transparent">
+    Nirvixa
+  </span>
+</motion.a>
+
 
         {/* ✅ Desktop Menu */}
-        <div className="hidden md:flex space-x-8 font-medium">
+        <div className="hidden md:flex items-center space-x-10 font-medium text-lg">
           {links.map((link, i) => (
             <motion.a
               key={i}
@@ -69,6 +76,7 @@ export default function Navbar() {
               }`}
             >
               {link.name}
+              {/* ✅ Smooth underline animation */}
               {active === link.href.replace("#", "") && (
                 <motion.span
                   layoutId="underline"
@@ -98,9 +106,9 @@ export default function Navbar() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
             className="md:hidden flex flex-col space-y-6 py-6 px-8 
-                       bg-white dark:bg-[#0f172a] 
+                       bg-white/95 dark:bg-[#0f172a]/95 backdrop-blur-md
                        text-gray-900 dark:text-white 
-                       border-t border-gray-200 dark:border-gray-700"
+                       border-t border-gray-200 dark:border-gray-700 shadow-md"
           >
             {links.map((link, i) => (
               <a

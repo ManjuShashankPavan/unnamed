@@ -9,7 +9,6 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#0f172a] dark:bg-[#0f172a] text-white py-12 mt-0 relative overflow-hidden">
-
       <div className="container mx-auto px-6 text-center md:text-left relative z-10">
         {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -23,20 +22,21 @@ export default function Footer() {
             <motion.a
               href="/"
               whileHover={{ scale: 1.05 }}
-              className="flex items-center justify-center md:justify-start space-x-2 cursor-pointer mb-2"
+              className="flex items-center justify-center md:justify-start space-x-3 cursor-pointer mb-3"
             >
+              {/* ✅ Fixed Logo (Bigger & Properly Aligned) */}
               <img
-                src="/images/logo.jpeg"
-                alt="Devlora Logo"
-                className="w-12 h-12 rounded-full shadow-lg border-2 border-cyan-400"
+                src="/images/logo.png"
+                alt="Nirvix Logo"
+                className="w-16 h-16 object-contain"
               />
               <span className="text-2xl font-extrabold tracking-wide bg-gradient-to-r from-blue-600 to-cyan-400 bg-clip-text text-transparent">
-                IBP
+                Nirvixa
               </span>
             </motion.a>
-            
+
             {/* Tagline */}
-            <p className="text-gray-400 italic text-sm mb-4">
+            <p className="text-gray-400 italic text-sm mb-4 ml-14 mt-2">
               “Where ideas turn into reality.”
             </p>
 
@@ -84,7 +84,7 @@ export default function Footer() {
             <div className="flex justify-center md:justify-start space-x-6 text-2xl">
               <motion.a
                 whileHover={{ scale: 1.2, rotate: 5 }}
-                href="https://github.com/yourgithub"
+                href="https://github.com/nirvixa"
                 target="_blank"
                 rel="noreferrer"
                 className="text-gray-300 hover:text-cyan-400 transition"
@@ -93,7 +93,7 @@ export default function Footer() {
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.2, rotate: -5 }}
-                href="https://www.linkedin.com/company/ideasbecomeproducts/"
+                href="https://www.linkedin.com/company/nirvixa/"
                 target="_blank"
                 rel="noreferrer"
                 className="text-gray-300 hover:text-cyan-400 transition"
@@ -102,7 +102,7 @@ export default function Footer() {
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.2 }}
-                href="mailto:devlora.devteam@gmail.com"
+                href="mailto:nirvixa@gmail.com"
                 className="text-gray-300 hover:text-cyan-400 transition"
               >
                 <FaEnvelope />
@@ -124,8 +124,7 @@ export default function Footer() {
         >
           <p>
             © {year}{" "}
-            <span className="font-semibold text-cyan-400">IBP</span>. All
-            rights reserved.
+            <span className="font-semibold text-cyan-400">Nirvixa</span>. All rights reserved.
           </p>
         </motion.div>
       </div>

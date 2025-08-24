@@ -26,10 +26,10 @@ const projects = [
     demo: "https://sbk-gold-company.netlify.app/",
   },
   {
-    title: "Project 4",
+    title: "Digital Marketing",
     desc: "A backend system with Node.js & Express.",
-    img: "https://via.placeholder.com/400x250",
-    github: "",
+    img: "/images/digi.png",
+    // github: "",
     demo: "https://www.instagram.com/globaltechsoftwaresolutions00/?next=%2F",
   },
 ];
@@ -38,7 +38,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-20 px-6 bg-[#0b1220]" // ✅ dark background like navbar/footer
+      className="py-20 px-6 bg-[#0b1220]" 
     >
       {/* Heading */}
       <motion.h2

@@ -103,7 +103,12 @@ Message: ${message}`;
               <p>
                 <span className="font-semibold">CALL US</span>
                 <br />
-                +91-7996032595
+                <a
+                  href="tel:+917996032595"
+                  className="text-white hover:underline"
+                >
+                  +91-7996032595
+                </a>
               </p>
             </div>
 
@@ -112,7 +117,12 @@ Message: ${message}`;
               <p>
                 <span className="font-semibold">EMAIL US</span>
                 <br />
-                devlora.devteam@gmail.com
+                <a
+                  href="mailto:nirvixa@gmail.com"
+                  className="text-White hover:underline"
+                >
+                  nirvixa@gmail.com
+                </a>
               </p>
             </div>
           </div>
